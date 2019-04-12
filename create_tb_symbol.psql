@@ -1,0 +1,15 @@
+create table if not exists stock(
+	symbol char(8) not null distkey,
+	caldate date not null sortkey,
+	dopen decimal(15, 2) not null default 0,
+	dhigh decimal(15, 2) not null default 0,
+	dlow decimal(15, 2) not null default 0,
+	dclose decimal(15, 2) not null default 0,
+	volume decimal(20, 1) not null default 0,
+	exdividend decimal(6, 2) not null default 0,
+	splitratio decimal(6, 2) not null default 0,
+	adjopen decimal(15, 2) not null default 0,
+	adjhigh decimal(15, 2) not null default 0,
+	adjlow decimal(15, 2) not null default 0,
+	adjclose decimal(15, 2) not null default 0,
+	adjvolume decimal(20, 1) not null default 0);

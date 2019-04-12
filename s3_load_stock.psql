@@ -1,0 +1,5 @@
+copy stock from 's3://<your_bucket_name>/staging/IBM_new.csv' 
+#credentials 'aws_iam_role=arn:aws-cn:iam::741251161495:role/myRedshiftRole' 
+credentials '<your_role_to_write_to_Redshift>' 
+delimiter ',' region 'cn-north-1'
+dateformat 'auto';
